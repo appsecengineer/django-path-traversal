@@ -1,0 +1,13 @@
+# docker-compose.yml
+
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "8880:8880"
+    volumes:
+      - .:/app
+
